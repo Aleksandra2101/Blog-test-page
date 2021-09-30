@@ -1,4 +1,4 @@
-[1,2,3,4,5,6].forEach(()=> document.getElementById("nesto").innerHTML += `
+[1,2,3,4,5,6].forEach(()=> document.getElementById("cards").innerHTML += `
     <div class="col-md-4 mb-5">
     <div class="card w-100" >
         <img src="..." class="card-img-top" alt="...">
