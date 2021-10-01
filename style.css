@@ -1,0 +1,62 @@
+html {
+  font-family: "Raleway", sans-serif;
+}
+/* "navbar */
+.link-secondary {
+  text-decoration: none;
+}
+/* head section */
+
+.heading-section {
+  background-color: #004c3f;
+  color: #6b7177;
+}
+
+/* buttons */
+
+.btn-design {
+  background-color: #008060;
+  color: #fff;
+}
+
+.btn-design:hover,
+.btn-design:active {
+  background-color: #004c3f;
+  color: #fff;
+}
+.btn-pagination {
+  font-weight: 500;
+  border: none;
+  color: #6b7177;
+}
+
+.btn-pagination:hover,
+.btn-pagination:active {
+    border: none;
+  color: #004c3f;
+}
+
+/* cards  */
+
+.card-design {
+  background-color: #fbf7ed;
+}
+
+.card-link {
+  color: #008060;
+  text-decoration: none;
+}
+.card-link:hover,
+.card-link:active {
+  color: #004c3f;
+}
+
+.post-title {
+  color: #004c3f;
+}
+
+.card {
+  background-color: #fbf7ed;
+}
+
+
