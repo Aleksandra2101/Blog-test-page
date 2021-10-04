@@ -39,7 +39,7 @@
                             <path d="M21 21l-5.2-5.2" />
                         </svg>
                     </a>
-                    <a class="btn btn-sm  btn-design " href="#">Sign up</a>
+                    <a class="btn btn-sm  btn-design " href="/create-post.html">Create post</a>
                 </div>
             </div>
         </header>
@@ -113,18 +113,21 @@
         </div>
         <div class="row " id="cards">
         </div>
-        <nav class="blog-pagination" aria-label="Pagination">
-            <a class="btn  btn-pagination" >Older</a>
-            <a class="btn  btn-pagination">Newer</a>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link"  onclick="loadPage('previous')">Previous</a></li>
+              
+              <li class="page-item"><a class="page-link"  onclick="loadPage('next')">Next</a></li>
+            </ul>
           </nav>
+
 
 
     </main>
 
 
     <!-- background-image:url('https://i.pinimg.com/564x/54/83/87/5483871a92f965feaba778448aa8591d.jpg') ;height:250px;background-size:cover;background-position:center" -->
-
-</body>
 
 <!-- Optional JavaScript; choose one of the two! -->
 
