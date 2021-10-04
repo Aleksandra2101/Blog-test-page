@@ -1,5 +1,5 @@
 
-fetch('http://localhost:3000/posts?_page=1&_limit=2')
+fetch('http://localhost:3000/posts?_page=1&_limit=3')
   .then(response => response.json())
   .then(data => {
     console.log(data)
@@ -53,7 +53,7 @@ function loadPage(direction) {
       })
   } else if(direction === 'previous' && pageNumber > 1) {
     pageNumber--;
-    fetch(`http://localhost:3000/posts?_page=${pageNumber}&_limit=2`)
+    fetch(`http://localhost:3000/posts?_page=${pageNumber}&_limit=3 `)
     .then(response => response.json())
     .then(data => {
       console.log(data)

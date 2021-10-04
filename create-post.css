@@ -3,3 +3,10 @@
     margin-top: 9px;
 }
 
+.container-form {
+    border: 1px solid rgba(128, 128, 128, 0.253);
+    padding:100px;
+   background-color: #fbf7ed;;
+   
+}
+
