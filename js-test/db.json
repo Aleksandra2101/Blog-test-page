@@ -7,7 +7,7 @@
         "test",
         "javascript"
       ],
-      "imageUrl": "https://picsum.photos/400",
+      "imageUrl": "https://i.pinimg.com/236x/07/42/69/07426974c3738e5d75f12f0f9d70e13b.jpg",
       "content": "Lorem ipsum dolor sit amet",
       "createdAt": "null",
       "author": "User1"
@@ -15,43 +15,43 @@
     {
       "title": "Blog  post 2",
       "content": "Lorem ipsum dolor sit amet",
-      "imageUrl": "https://picsum.photos/500",
+      "imageUrl": "https://i.pinimg.com/236x/ba/62/7b/ba627bd665c32060acbc0cca0a65580f.jpg",
       "id": 23423434
     },
     {
       "title": "Blog post 3",
       "content": "Lorem impsum",
-      "imageUrl": "https://picsum.photos/300",
+      "imageUrl": "https://i.pinimg.com/236x/b5/e3/e5/b5e3e53e90e512d0922a1ba662e3d7e5.jpg",
       "id": 23423437
     },
     {
       "title": "Blog post 4 ",
       "content": "This is a new post ",
-      "imageUrl": "https://picsum.photos/400",
+      "imageUrl": "https://i.pinimg.com/236x/23/6e/b2/236eb25f9f66d5d101f5bef872f765fb.jpg",
       "id": 23423438
     },
     {
       "title": "Blog post 5",
       "content": "This is the fifth blog post",
-      "imageUrl": "https://picsum.photos/100",
+      "imageUrl": "https://i.pinimg.com/236x/aa/ca/58/aaca58432695d89e5590a28474dcd7d6.jpg",
       "id": 23423439
     },
     {
       "title": "Blog post 6 ",
       "content": "This is the sixth blog post :)",
-      "imageUrl": "https://picsum.photos/505",
+      "imageUrl": "https://i.pinimg.com/236x/7b/00/07/7b0007158984187ae01624536095030a.jpg",
       "id": 23423440
     },
     {
       "title": "Blog post 7",
       "content": "This is blog post number 7 ",
-      "imageUrl": "https://picsum.photos/520",
+      "imageUrl": "https://i.pinimg.com/236x/e0/94/0f/e0940fcf90218ac96a7806037f03210e.jpg",
       "id": 23423441
     },
     {
       "title": "Blog post 8",
       "content": "This is blog post number 8 ",
-      "imageUrl": "https://picsum.photos/508",
+      "imageUrl": "https://i.pinimg.com/236x/73/42/06/734206687b50aad9c654e1db902402c3.jpg",
       "id": 23423442
     }
   ],
