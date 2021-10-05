@@ -1,12 +1,69 @@
 
-.submit-button {
-    margin-top: 9px;
+
+html {
+  font-family: "Raleway", sans-serif;
 }
 
 .container-form {
-    border: 1px solid rgba(128, 128, 128, 0.253);
-    padding:100px;
-   background-color: #fbf7ed;;
-   
+  padding: 10rem;
+  background-color: #fbf7ed;
+  border-radius: 5%;
 }
 
+.title-area {
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.content-area {
+  font-weight: 500;
+  line-height: 2;
+  width: 30rem;
+}
+
+.image-area {
+  font-weight: 500;
+  line-height: 1.5;
+}
+.form-control {
+  border-radius: 0.5rem;
+}
+
+.form-control:focus {
+  color: rgba(0, 0, 0, 0.664);
+  border-color: #7e7e7e0a;
+  box-shadow: 0 0 0 0.25rem #63636313;
+}
+
+.submit-button {
+  margin-top: 1rem;
+  width: 100%;
+  font-size: 1.2rem;
+}
+@media only screen and (max-width: 800px) {
+  .container-form {
+    padding: 5rem;
+  }
+  .content-area {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container-form {
+    padding: 2rem;
+  }
+  .title-area {
+    font-size: 1rem;
+  }
+  .content-area {
+    width: 15rem;
+    font-size: 0.8rem;
+  }
+  .image-area {
+    font-size: 1rem;
+  }
+  .submit-button {
+    font-size: 1rem;
+  }
+}

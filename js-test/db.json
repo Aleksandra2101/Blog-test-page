@@ -13,58 +13,46 @@
       "author": "User1"
     },
     {
-      "title": "ddd",
-      "content": "",
-      "imageUrl": "https://picsum.photos/300",
-      "id": 23423433
-    },
-    {
-      "title": "Blog",
-      "content": "",
+      "title": "Blog  post 2",
+      "content": "Lorem ipsum dolor sit amet",
       "imageUrl": "https://picsum.photos/500",
       "id": 23423434
     },
     {
-      "title": "24524w5w45rtyrtyert",
-      "content": "ertuetureturuertuertu",
-      "imageUrl": "ertuetruertujetue566uy",
-      "id": 23423435
-    },
-    {
-      "title": "sdjkdgfsdgf",
-      "content": "sadgtxdfgdfgvdfgdsfgdg",
-      "imageUrl": "fhdhfgvhfghjgfhjhjfg",
-      "id": 23423436
-    },
-    {
-      "title": "sdjkdgfsdgf",
-      "content": "sadgtxdfgdfgvdfgdsfgdg",
-      "imageUrl": "fhdhfgvhfghjgfhjhjfg",
+      "title": "Blog post 3",
+      "content": "Lorem impsum",
+      "imageUrl": "https://picsum.photos/300",
       "id": 23423437
     },
     {
-      "title": "sdjkdgfsdgf",
-      "content": "sadgtxdfgdfgvdfgdsfgdg",
-      "imageUrl": "fhdhfgvhfghjgfhjhjfg",
+      "title": "Blog post 4 ",
+      "content": "This is a new post ",
+      "imageUrl": "https://picsum.photos/400",
       "id": 23423438
     },
     {
-      "title": "drghrdughrgp",
-      "content": "ertyhrektjkgherfui;kghrdti;u",
-      "imageUrl": "drfgi udfpguiodhfgpui",
+      "title": "Blog post 5",
+      "content": "This is the fifth blog post",
+      "imageUrl": "https://picsum.photos/100",
       "id": 23423439
     },
     {
-      "title": "sdlkfijghsdfjgbns",
-      "content": "kjdbfgkjd",
-      "imageUrl": "dkfjgbdkf",
+      "title": "Blog post 6 ",
+      "content": "This is the sixth blog post :)",
+      "imageUrl": "https://picsum.photos/505",
       "id": 23423440
     },
     {
-      "title": "Blog posts 22222",
-      "content": "Helloooooooooooooooooooo",
-      "imageUrl": "https://picsum.photos/500",
+      "title": "Blog post 7",
+      "content": "This is blog post number 7 ",
+      "imageUrl": "https://picsum.photos/520",
       "id": 23423441
+    },
+    {
+      "title": "Blog post 8",
+      "content": "This is blog post number 8 ",
+      "imageUrl": "https://picsum.photos/508",
+      "id": 23423442
     }
   ],
   "errors": [

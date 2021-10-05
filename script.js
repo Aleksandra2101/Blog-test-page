@@ -30,7 +30,7 @@ function loadPage(direction) {
 
   if (direction === 'next') {
     pageNumber++;
-    fetch(`http://localhost:3000/posts?_page=${pageNumber}&_limit=2`)
+    fetch(`http://localhost:3000/posts?_page=${pageNumber}&_limit=3`)
       .then(response => response.json())
       .then(data => {
         console.log(data)

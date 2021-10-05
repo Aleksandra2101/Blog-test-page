@@ -32,8 +32,9 @@ html {
 
 .btn-pagination:hover,
 .btn-pagination:active {
-    border: none;
+  border: none;
   color: #004c3f;
+  cursor: pointer;
 }
 
 /* cards  */
