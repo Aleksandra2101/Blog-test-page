@@ -53,6 +53,12 @@
       "content": "This is blog post number 8 ",
       "imageUrl": "https://i.pinimg.com/236x/73/42/06/734206687b50aad9c654e1db902402c3.jpg",
       "id": 23423442
+    },
+    {
+      "title": "Blog post 9",
+      "content": "This is a blog post.",
+      "imageUrl": "https://i.pinimg.com/236x/e1/b1/fe/e1b1fe74153d6c5f7aeaffb519bb32e0.jpg",
+      "id": 23423443
     }
   ],
   "errors": [
