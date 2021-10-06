@@ -14,6 +14,7 @@ html {
 .title-area {
   font-weight: 500;
   line-height: 1.5;
+  
 }
 
 .content-area {
@@ -28,12 +29,14 @@ html {
 }
 .form-control {
   border-radius: 0.5rem;
+  background-color: rgba(187, 207, 187, 0.055);
 }
 
 .form-control:focus {
   color: rgba(0, 0, 0, 0.534);
   border-color: #7e7e7e0a;
   box-shadow: 0 0 0 0.25rem #63636313;
+  background-color: rgba(187, 207, 187, 0.055);
 }
 
 .submit-button {
