@@ -8,19 +8,19 @@
         "javascript"
       ],
       "imageUrl": "https://i.pinimg.com/236x/07/42/69/07426974c3738e5d75f12f0f9d70e13b.jpg",
-      "content": "Lorem ipsum dolor sit amet",
+      "content": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eveniet quaerat reprehenderit? Eos facere voluptatem impedit, libero itaque est cumque, recusandae neque ex corrupti sed ad blanditiis, quae dolore laborum! ",
       "createdAt": "null",
       "author": "User1"
     },
     {
       "title": "Blog  post 2",
-      "content": "Lorem ipsum dolor sit amet",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eveniet quaerat reprehenderit? Eos facere voluptatem impedit, libero itaque est cumque, recusandae neque ex corrupti sed ad blanditiis, quae dolore laborum!",
       "imageUrl": "https://i.pinimg.com/236x/ba/62/7b/ba627bd665c32060acbc0cca0a65580f.jpg",
       "id": 23423434
     },
     {
       "title": "Blog post 3",
-      "content": "Lorem impsum",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eveniet quaerat reprehenderit? Eos facere voluptatem impedit, libero itaque est cumque, recusandae neque ex corrupti sed ad blanditiis, quae dolore laborum!",
       "imageUrl": "https://i.pinimg.com/236x/b5/e3/e5/b5e3e53e90e512d0922a1ba662e3d7e5.jpg",
       "id": 23423437
     },
@@ -59,6 +59,24 @@
       "content": "This is a blog post.",
       "imageUrl": "https://i.pinimg.com/236x/e1/b1/fe/e1b1fe74153d6c5f7aeaffb519bb32e0.jpg",
       "id": 23423443
+    },
+    {
+      "title": "Featured Post ",
+      "content": "This is a wider card with supporting text below as a  natural\nlead-in to additional content.",
+      "imageUrl": "https://i.pinimg.com/564x/11/eb/76/11eb761f7242004c1880b189fa7eb036.jpg",
+      "id": 23423444
+    },
+    {
+      "title": "Featured Post 2",
+      "content": "This is a wider card with supporting text below as a natural\nlead-in to additional content.",
+      "imageUrl": "https://i.pinimg.com/564x/11/eb/76/11eb761f7242004c1880b189fa7eb036.jpg",
+      "id": 23423445
+    },
+    {
+      "title": "Featured post 2",
+      "content": "This is a wider card with supporting text below as a natural lead-in to additional content.",
+      "imageUrl": "https://i.pinimg.com/564x/11/eb/76/11eb761f7242004c1880b189fa7eb036.jpg",
+      "id": 23423446
     }
   ],
   "errors": [

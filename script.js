@@ -1,3 +1,44 @@
+//Hero section
+document.getElementById("hero-section").innerHTML += `
+      <div class="col-md-6 px-0">
+                    <h1 class="display-4 fst-italic">Welcome to the blog </h1>
+                    <p class="lead my-3">Multiple lines of text , informing new readers quickly and
+                        efficiently about what’s most interesting about this blog.</p>
+                </div>  `;
+
+//First cards section
+fetch("http://localhost:3000/posts?_page=6&_limit=2")
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+    data.forEach((posts) => {
+      document.getElementById("first-cards").innerHTML += `
+      <div class="col-md-6 ">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative card-design">
+                        <div class="col p-4 d-flex flex-column position-static">
+                          
+                            <h3 class="mb-0 post-title">${posts.title}</h3>
+                            <div class="mb-1 text-muted">Nov 12</div>
+                            <p class=" mb-auto text-secondary">${posts.content}</p>
+                            <a href="#" class="stretched-link card-link">Continue reading</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="bd-placeholder-img" width="250px" height="250px"
+                                style="background-image:url(${posts.imageUrl});background-size:cover;background-position:center">
+                            </img>
+
+                        </div>
+
+                    </div>
+                </div>
+       `;
+    });
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
 fetch("http://localhost:3000/posts?_page=1&_limit=3")
   .then((response) => response.json())
   .then((data) => {
