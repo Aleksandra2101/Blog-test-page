@@ -1,6 +1,6 @@
-Test project made for practicing html , css  and javascript
+## Test Blog page made for practicing HTML,CSS, JavaScript
 
-#Project setup
-cd js-test
-npm install
-npm start
+###### Project Setup
+- cd js-test
+- npm install
+- npm start
