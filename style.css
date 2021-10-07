@@ -1,40 +1,54 @@
 html {
-  font-family: "Raleway", sans-serif;
-}
-/* "navbar */
-.link-secondary {
-  text-decoration: none;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
 }
 /* head section */
 
 .heading-section {
-  background-color: #004c3f;
-  color: #6b7177;
+border-radius: 2rem 2rem 0 0 ;
+background-color:#e60023d8;
+ color: #fff;
 }
+/* "navbar */
+.navbar{
+  border-radius: 2rem ;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.search-box{
+  border-radius: 2rem;
+
+  
+}
+
+
 
 /* buttons */
 
 .btn-design {
-  background-color: #008060;
+  background-color: #e60023f5;
   color: #fff;
+  border-radius: 2rem;
 }
 
 .btn-design:hover,
 .btn-design:active {
-  background-color: #004c3f;
+  background-color: #faf6f7e1;;
   color: #fff;
 }
 .btn-pagination {
   font-weight: 500;
   border: none;
-  color: #6b7177;
+  color: #6b7177fa;
 }
 
 .btn-pagination:hover,
 .btn-pagination:active {
   border: none;
-  color: #004c3f;
+  color:#e60023c2 ;
   cursor: pointer;
+}
+.page-link,.page-link:focus{
+  background-color: none;
+  
 }
 
 /* cards  */
@@ -44,18 +58,22 @@ html {
 }
 
 .card-link {
-  color: #008060;
+ 
   text-decoration: none;
 }
 .card-link:hover,
 .card-link:active {
-  color: #004c3f;
+  color:#e60023c2;
+
 }
 
-.post-title {
-  color: #004c3f;
-}
+
 
 .card {
-  background-color: #fbf7ed;
+  background-color: #fff;
+  box-shadow: 0 0 0 0.25rem #63636309;
+  border-radius: 2rem;
+}
+.card-img{
+ border-radius: 2rem 2rem 0 0 ; 
 }

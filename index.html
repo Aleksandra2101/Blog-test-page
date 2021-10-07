@@ -1,121 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;700&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Blog page test</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
+      <header class="blog-header py-3 ">
+        <div
+          class="  d-flex heading-section"
+          id="hero-section"
+        >
+        <div  style="background-image:url('https://i.pinimg.com/236x/40/43/b7/4043b73935355f4835e879dde5ddb146.jpg');width: 100%;background-size:auto;border-radius:  2rem 0 0 0 ;">
+     </div>
+        </div>
+        
+      </header>
+    </div>
 
-
-       
-        <header class="blog-header py-3">
-            <div class="row flex-nowrap justify-content-between align-items-center">
-                <div class="col-4 pt-1">
-                    <a class="link-secondary  " href="#">Aleksandra's Blog </a>
-                </div>
-
-                <div class="col-4 d-flex justify-content-end align-items-center">
-                    <a class="link-secondary  " href="#" aria-label="Search">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
-                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img"
-                            viewBox="0 0 24 24">
-                            <title>Search</title>
-                            <circle cx="10.5" cy="10.5" r="7.5" />
-                            <path d="M21 21l-5.2-5.2" />
-                        </svg>
-                    </a>
-                    <a class="btn btn-sm  btn-design " href="/create-post.html">Create post</a>
-                </div>
-            </div>
-        </header </div>
-
-        <main class="container">
-            <div class="p-4 p-md-5 mb-4 text-white rounded heading-section"id="hero-section">
-                <!-- <div class="col-md-6 px-0">
-                    <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
-                    <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and
-                        efficiently about what’s most interesting in this post’s contents.</p>
-                    <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
-                </div> -->
-             
-            </div>
-   
-
-            <div class="row mb-2" id="first-cards">
-                <!-- <div class="col-md-6 ">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative card-design">
-                        <div class="col p-4 d-flex flex-column position-static">
-                            <strong class="d-inline-block mb-2 text-secondary">World</strong>
-                            <h3 class="mb-0 post-title">Featured post</h3>
-                            <div class="mb-1 text-muted">Nov 12</div>
-                            <p class=" mb-auto text-secondary">This is a wider card with supporting text below as a
-                                natural
-                                lead-in to additional content.</p>
-                            <a href="#" class="stretched-link card-link">Continue reading</a>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <img class="bd-placeholder-img" width="250px" height="250px"
-                                style="background-image:url('https://i.pinimg.com/564x/11/eb/76/11eb761f7242004c1880b189fa7eb036.jpg');background-size:cover;background-position:center">
-                            </img>
-
-                        </div>
-
-                    </div>
-                </div> -->
+    <main class="container">
+      <nav class="navbar navbar-light bg-light mb-6">
+        <div class="container-fluid">
+          <div class="d-flex">
+              <div>
                
-            </div>
-            <div class="row " id="cards">
-            </div>
+                <input
+                class="form-control search-box "
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              /></div>
+            
+          
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <a class="btn btn-design" href="/create-post.html">Create post</a>
+          </div>
+        </div>
+      </nav>
 
-            <nav aria-label="Page navigation example">
-                <ul class="pagination">
-                    <li class="page-item "><a class="page-link btn-pagination"
-                            onclick="loadPage('previous')">Previous</a></li>
+      
 
-                    <li class=""><a class="page-link page-item btn-pagination" onclick="loadPage('next')">Next</a></li>
-                </ul>
-            </nav>
+      <div class="row mt-4" id="cards"></div>
 
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link btn-pagination" onclick="loadPage('previous')"
+              >Previous</a
+            >
+          </li>
 
+          <li class="">
+            <a
+              class="page-link page-item btn-pagination"
+              onclick="loadPage('next')"
+              >Next</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </main>
+    
 
-        </main>
+ 
 
+    <!-- Optional JavaScript; choose one of the two! -->
 
-        <!-- background-image:url('https://i.pinimg.com/564x/54/83/87/5483871a92f965feaba778448aa8591d.jpg') ;height:250px;background-size:cover;background-position:center" -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
 
-        <!-- Optional JavaScript; choose one of the two! -->
-
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-            crossorigin="anonymous"></script>
-        <script defer src="script.js"></script>
-
-        <!-- Option 2: Separate Popper and Bootstrap JS -->
-        <!--
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     -->
-
-</body>
-
+  </body>
 </html>

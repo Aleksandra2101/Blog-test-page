@@ -1,45 +1,16 @@
 //Hero section
 document.getElementById("hero-section").innerHTML += `
-      <div class="col-md-6 px-0">
+      <div class="col-md-6 m-2 px-0">
                     <h1 class="display-4 fst-italic">Welcome to the blog </h1>
                     <p class="lead my-3">Multiple lines of text , informing new readers quickly and
                         efficiently about what’s most interesting about this blog.</p>
                 </div>  `;
 
 //First cards section
-fetch("http://localhost:3000/posts?_page=6&_limit=2")
-  .then((response) => response.json())
-  .then((data) => {
-    console.log(data);
-    data.forEach((posts) => {
-      document.getElementById("first-cards").innerHTML += `
-      <div class="col-md-6 ">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative card-design">
-                        <div class="col p-4 d-flex flex-column position-static">
-                          
-                            <h3 class="mb-0 post-title">${posts.title}</h3>
-                            <div class="mb-1 text-muted">Nov 12</div>
-                            <p class=" mb-auto text-secondary">${posts.content}</p>
-                            <a href="#" class="stretched-link card-link">Continue reading</a>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <img class="bd-placeholder-img" width="250px" height="250px"
-                                style="background-image:url(${posts.imageUrl});background-size:cover;background-position:center">
-                            </img>
 
-                        </div>
 
-                    </div>
-                </div>
-       `;
-    });
-  })
-  .catch((err) => {
-    console.log(err);
-  });
 
-fetch("http://localhost:3000/posts?_page=1&_limit=3")
+fetch("http://localhost:3000/posts?_page=1&_limit=6")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
@@ -47,7 +18,7 @@ fetch("http://localhost:3000/posts?_page=1&_limit=3")
       document.getElementById("cards").innerHTML += `
       <div class="col-md-4 mb-5">
       <div class="card w-100" >
-          <div style="background-image:url(${posts.imageUrl}) ;height:250px;background-position:center"></div>
+          <div class="card-img" style="background-image:url(${posts.imageUrl}) ;height:250px;background-position:center "></div>
           
           <div class="card-body">
             <h5 class="card-title">${posts.title}</h5>
@@ -68,7 +39,7 @@ let pageNumber = 1;
 function loadPage(direction) {
   if (direction === "next") {
     pageNumber++;
-    fetch(`http://localhost:3000/posts?_page=${pageNumber}&_limit=3`)
+    fetch(`http://localhost:3000/posts?_page=${pageNumber}&_limit=6`)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
@@ -91,7 +62,7 @@ function loadPage(direction) {
       });
   } else if (direction === "previous" && pageNumber > 1) {
     pageNumber--;
-    fetch(`http://localhost:3000/posts?_page=${pageNumber}&_limit=3 `)
+    fetch(`http://localhost:3000/posts?_page=${pageNumber}&_limit=6 `)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
@@ -115,6 +86,3 @@ function loadPage(direction) {
   }
 }
 
-{
-  /* <img src="https://64.media.tumblr.com/9901d45b3bf8deffd857dfc5d0e6b677/tumblr_nnp2ze4bIr1r2ll09o1_640.jpg" class="card-img-top " height="400px" alt="..."></img> */
-}
