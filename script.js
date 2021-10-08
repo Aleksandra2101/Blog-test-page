@@ -1,14 +1,16 @@
 //Hero section
-document.getElementById("hero-section").innerHTML += `
-      <div class="col-md-6 m-2 px-0">
-                    <h1 class="display-4 fst-italic">Welcome to the blog </h1>
-                    <p class="lead my-3">Multiple lines of text , informing new readers quickly and
-                        efficiently about what’s most interesting about this blog.</p>
-                </div>  `;
+function displayHero(){
+  document.getElementById("hero-section").innerHTML += `
+  <div class="col-md-6 m-2 px-0">
+                <h1 class="display-4 fst-italic">Welcome to the blog </h1>
+                <p class="lead my-3">Multiple lines of text , informing new readers quickly and
+                    efficiently about what’s most interesting about this blog.</p>
+            </div>  `;
+}
+displayHero()
 
-//First cards section
 
-
+//Cards
 
 fetch("http://localhost:3000/posts?_page=1&_limit=6")
   .then((response) => response.json())
@@ -23,7 +25,7 @@ fetch("http://localhost:3000/posts?_page=1&_limit=6")
           <div class="card-body">
             <h5 class="card-title">${posts.title}</h5>
             <p class="card-text">${posts.content}</p>
-            <a href="#" class="btn  btn-design">Read more</a>
+            <a href="/view-post.html" class="btn  btn-design">Read more</a>
           </div>
         </div>
   </div>
@@ -48,12 +50,12 @@ function loadPage(direction) {
           document.getElementById("cards").innerHTML += `
       <div class="col-md-4 mb-5">
       <div class="card w-100" >
-          <div style="background-image:url(${posts.imageUrl}) ;height:250px;background-position:center"></div>
+          <div class="card-img" style="background-image:url(${posts.imageUrl}) ;height:250px;background-position:center"></div>
           
           <div class="card-body">
             <h5 class="card-title">${posts.title}</h5>
             <p class="card-text">${posts.content}</p>
-            <a href="#" class="btn  btn-design">Read more</a>
+            <a href="/view-post.htm" class="btn  btn-design">Read more</a>
           </div>
         </div>
   </div>
@@ -69,20 +71,19 @@ function loadPage(direction) {
         document.getElementById("cards").innerHTML = "";
         data.forEach((posts) => {
           document.getElementById("cards").innerHTML += `
-    <div class="col-md-4 mb-5">
-    <div class="card w-100" >
-        <div style="background-image:url(${posts.imageUrl}) ;height:250px;background-position:center"></div>
+            <div class="col-md-4 mb-5">
+            <div class="card w-100" >
+              <div class="card-img" style="background-image:url(${posts.imageUrl}) ;height:250px;background-position:center"></div>
         
-        <div class="card-body">
-          <h5 class="card-title">${posts.title}</h5>
-          <p class="card-text">${posts.content}</p>
-          <a href="#" class="btn  btn-design">Read more</a>
-        </div>
-      </div>
-</div>
+            <div class="card-body">
+               <h5 class="card-title">${posts.title}</h5>
+                <p class="card-text">${posts.content}</p>
+                <a  href="/view-post.htm" class="btn  btn-design">Read more</a>
+                 </div>
+               </div>
+                </div>
 `;
         });
       });
   }
 }
-
