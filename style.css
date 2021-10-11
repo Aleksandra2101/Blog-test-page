@@ -1,11 +1,11 @@
 html {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-family:  'Inter', sans-serif;
 }
 /* head section */
 
 .heading-section {
-border-radius: 1rem ;
 background-color:#e60023d8;
+ font-style: bold;
  color: #fff;
 }
 /* "navbar */

@@ -1,14 +1,15 @@
 //Hero section
-function displayHero(){
+function displayHero() {
   document.getElementById("hero-section").innerHTML += `
-  <div class="col-md-6 m-2 px-0">
-                <h1 class="display-4 fst-italic">Welcome to the blog </h1>
+  <div class="col-md-6 m-4 p-4 px-0">
+               
+                <h1 class="display-4 ">Welcome to the blog </h1>
                 <p class="lead my-3">Multiple lines of text , informing new readers quickly and
                     efficiently about what’s most interesting about this blog.</p>
+              
             </div>  `;
 }
-displayHero()
-
+displayHero();
 
 //Cards
 
@@ -25,7 +26,7 @@ fetch("http://localhost:3000/posts?_page=1&_limit=6")
           <div class="card-body">
             <h5 class="card-title">${posts.title}</h5>
             <p class="card-text">${posts.content}</p>
-            <a href="/view-post.html" class="btn  btn-design">Read more</a>
+            <a href="/view-post.html" class="btn  btn-design   >Read more</a>
           </div>
         </div>
   </div>
@@ -55,7 +56,7 @@ function loadPage(direction) {
           <div class="card-body">
             <h5 class="card-title">${posts.title}</h5>
             <p class="card-text">${posts.content}</p>
-            <a href="/view-post.htm" class="btn  btn-design">Read more</a>
+            <a href="/view-post.html" class="btn  btn-design">Read more</a>
           </div>
         </div>
   </div>
@@ -78,7 +79,7 @@ function loadPage(direction) {
             <div class="card-body">
                <h5 class="card-title">${posts.title}</h5>
                 <p class="card-text">${posts.content}</p>
-                <a  href="/view-post.htm" class="btn  btn-design">Read more</a>
+                <a  href="/view-post.html" class="btn  btn-design">Read more</a>
                  </div>
                </div>
                 </div>
