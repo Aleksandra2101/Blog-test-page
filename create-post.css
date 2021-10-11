@@ -54,6 +54,10 @@ h1 {
   font-size: 1.2rem;
   border-radius: 3rem;
 }
+.submit-button:hover,.submit-button:active{
+  background-color: #e60023c5;
+  color: #fff;
+}
 @media only screen and (max-width: 800px) {
   .container-form {
     padding: 5rem;
