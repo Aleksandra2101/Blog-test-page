@@ -1,25 +1,21 @@
 html {
-  font-family:  'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 /* head section */
 
 .heading-section {
-background-color:#e60023d8;
- font-style: bold;
- color: #fff;
+  background-color: #e60023d8;
+  font-style: bold;
+  color: #fff;
 }
 /* "navbar */
-.navbar{
-  border-radius: 2rem ;
+.navbar {
+  border-radius: 2rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.search-box{
+.search-box {
   border-radius: 2rem;
-
-  
 }
-
-
 
 /* buttons */
 
@@ -43,12 +39,12 @@ background-color:#e60023d8;
 .btn-pagination:hover,
 .btn-pagination:active {
   border: none;
-  color:#e60023c2 ;
+  color: #e60023c2;
   cursor: pointer;
 }
-.page-link,.page-link:focus{
+.page-link,
+.page-link:focus {
   background-color: none;
-  
 }
 
 /* cards  */
@@ -58,22 +54,18 @@ background-color:#e60023d8;
 }
 
 .card-link {
- 
   text-decoration: none;
 }
 .card-link:hover,
 .card-link:active {
-  color:#e60023c2;
-
+  color: #e60023c2;
 }
-
-
 
 .card {
   background-color: #fff;
   box-shadow: 0 0 0 0.25rem #63636309;
   border-radius: 2rem;
 }
-.card-img{
- border-radius: 2rem 2rem 0 0 ; 
+.card-img {
+  border-radius: 2rem 2rem 0 0;
 }
