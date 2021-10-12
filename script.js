@@ -19,14 +19,14 @@ fetch("http://localhost:3000/posts?_page=1&_limit=6")
     console.log(data);
     data.forEach((posts) => {
       document.getElementById("cards").innerHTML += `
-      <div class="col-md-4 mb-5">
+      <div class="col-md-4 mb-5 ">
       <div class="card w-100" >
           <div class="card-img" style="background-image:url(${posts.imageUrl}) ;height:250px;background-position:center "></div>
           
           <div class="card-body">
             <h5 class="card-title">${posts.title}</h5>
             <p class="card-text">${posts.content}</p>
-            <a href="/view-post.html" class="btn  btn-design   >Read more</a>
+            <a href="/view-post.html + ${posts.id}"  class="btn btn-design" >Read more</a>
           </div>
         </div>
   </div>
@@ -56,7 +56,7 @@ function loadPage(direction) {
           <div class="card-body">
             <h5 class="card-title">${posts.title}</h5>
             <p class="card-text">${posts.content}</p>
-            <a href="/view-post.html" class="btn  btn-design">Read more</a>
+            <a href="/view-post.html + ${posts.id}"  class="btn  btn-design">Read more</a>
           </div>
         </div>
   </div>
@@ -72,19 +72,33 @@ function loadPage(direction) {
         document.getElementById("cards").innerHTML = "";
         data.forEach((posts) => {
           document.getElementById("cards").innerHTML += `
-            <div class="col-md-4 mb-5">
+            <div class="col-md-4 mb-5 card">
             <div class="card w-100" >
               <div class="card-img" style="background-image:url(${posts.imageUrl}) ;height:250px;background-position:center"></div>
         
             <div class="card-body">
-               <h5 class="card-title">${posts.title}</h5>
+               <h5  id="title" class="card-title">${posts.title}</h5>
                 <p class="card-text">${posts.content}</p>
-                <a  href="/view-post.html" class="btn  btn-design">Read more</a>
+                <a  href="/view-post.html+ ${posts.id}"  class="btn  btn-design">Read more</a>
                  </div>
                </div>
                 </div>
 `;
         });
       });
+  }
+}
+function myFunction() {
+  let input = document.getElementById("myInput");
+  let filter = input.value.toUpperCase();
+  let cards = document.getElementsByClassName("card");
+
+  for (i = 0; i < cards.length; i++) {
+    let title = cards[i].children[1].firstElementChild.innerText;
+    if (title.toUpperCase().indexOf(filter) > -1) {
+      cards[i].parentNode.style.display = "";
+    } else {
+      cards[i].parentNode.style.display = "none";
+    }
   }
 }
