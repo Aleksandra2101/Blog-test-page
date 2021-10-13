@@ -1,5 +1,5 @@
 html {
-  font-family:  'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -8,8 +8,6 @@ body {
 h1 {
   color: #e60023c0;
 }
-
-
 
 .container-form {
   color: rgba(94, 90, 90, 0.753);
@@ -47,7 +45,7 @@ h1 {
   background-color: rgba(187, 207, 187, 0.055);
 }
 .btn-design {
-  margin: .5rem;
+  margin: 0.5rem;
   background-color: #e60023f5;
   color: #fff;
   border-radius: 2rem;
@@ -67,7 +65,8 @@ h1 {
   font-size: 1.2rem;
   border-radius: 3rem;
 }
-.submit-button:hover,.submit-button:active{
+.submit-button:hover,
+.submit-button:active {
   background-color: #e60023c5;
   color: #fff;
 }

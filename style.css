@@ -68,13 +68,10 @@ html {
 }
 .card-img {
   border-radius: 2rem 2rem 0 0;
-  
 }
- 
 
-.posts{
+.posts {
   margin-top: 10rem;
   display: flex;
   justify-content: center;
-  
 }
