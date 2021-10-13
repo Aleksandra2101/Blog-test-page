@@ -23,37 +23,6 @@ const getData = (id) => {
 }
 
 const updateData = function () {
-  if (postTitle === "") {
-    alert("Title is required");
-    return;
-  }
-  if (postTitle.length < 11) {
-    fetch("http://localhost:3000/errors")
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        alert(data[1].fields.title);
-      });
-
-    return;
-  }
-
-  let postContent = document.getElementById("contentId").value;
-  if (postContent === "") {
-    alert("Content is required");
-    return;
-  }
-
-  let postImage = document.getElementById("imageId").value;
-  if (postImage === "") {
-    fetch("http://localhost:3000/errors")
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        alert(data[1].fields.imageUrl);
-      });
-    return;
-  }
   const post = {
     title: postTitle.value,
     content: postContent.value,
