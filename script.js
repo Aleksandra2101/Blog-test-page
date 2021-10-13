@@ -46,7 +46,7 @@ function loadPage(direction) {
         document.getElementById("cards").innerHTML = "";
         data.forEach((posts) => {
           document.getElementById("cards").innerHTML += `
-      <div class="col-md-4 mb-5 card">
+      <div class="col-md-4 mb-5 ">
       <div class="card w-100" >
           <div class="card-img" style="background-image:url(${posts.imageUrl}) ;height:250px;background-position:center"></div>
           
@@ -69,7 +69,7 @@ function loadPage(direction) {
         document.getElementById("cards").innerHTML = "";
         data.forEach((posts) => {
           document.getElementById("cards").innerHTML += `
-            <div class="col-md-4 mb-5 card">
+            <div class="col-md-4 mb-5 ">
             <div class="card w-100" >
               <div class="card-img" style="background-image:url(${posts.imageUrl}) ;height:250px;background-position:center"></div>
         
