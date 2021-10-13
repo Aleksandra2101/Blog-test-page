@@ -27,7 +27,7 @@
   <body>
     <div class="d-flex justify-content-center min-vh-100 align-items-center">
       <div class="container-form">
-        <h1>Create post</h1>
+        <h1>Edit Post</h1>
         <div class="form-group title-area">
           <label for="title">Title</label>
           <input
@@ -57,13 +57,8 @@
           />
         </div>
 
-        <button
-          type="submit"
-          class="btn submit-button"
-          onclick="submitBlogPost()"
-        >
-          Submit
-        </button>
+        <button type="submit" class="btn btn-design edit-post">Submit</button>
+        <a href="#" class="btn btn-design" onclick="deletePost()">Delete</a>
       </div>
     </div>
 
@@ -72,6 +67,6 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
-    <script defer src="create-post.js"></script>
+    <script defer src="edit-post.js"></script>
   </body>
 </html>

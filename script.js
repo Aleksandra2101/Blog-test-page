@@ -53,7 +53,7 @@ function loadPage(direction) {
           <div class="card-body">
             <h5 class="card-title">${posts.title}</h5>
             <p class="card-text">${posts.content}</p>
-            <a href="/view-post.html + ${posts.id}"  class="btn  btn-design">Read more</a>
+            <a href="/view-post.html?post_id=${posts.id}"  class="btn  btn-design">Read more</a>
           </div>
         </div>
   </div>
@@ -76,7 +76,7 @@ function loadPage(direction) {
             <div class="card-body">
                <h5  id="title" class="card-title">${posts.title}</h5>
                 <p class="card-text">${posts.content}</p>
-                <a  href="/view-post.html+ ${posts.id}"  class="btn  btn-design">Read more</a>
+                <a  href="/view-post.html?post_id=${posts.id}"  class="btn  btn-design">Read more</a>
                  </div>
                </div>
                 </div>
